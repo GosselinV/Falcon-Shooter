@@ -14,7 +14,7 @@ static class HUD {
 		score = 0;
 		hudText = GameObject.FindGameObjectWithTag ("hudtext").GetComponent<Text> ();
 		hudText.text = "Score = 0";
-		EventManager.AddIntListener (IncrementScore);
+		EventManager.AddHudListener (IncrementScore);
 	}
 
 	static public void IncrementScore(int points){

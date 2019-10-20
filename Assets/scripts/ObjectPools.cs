@@ -63,7 +63,7 @@ static public class ObjectPools
 	static public GameObject GetNewLaser(){
 		GameObject laser = GameObject.Instantiate (prefabLaser);
 		laser.GetComponent<Laser> ().Initialize ();
-		laser.SetActive (false);
+		//laser.SetActive (false);
 		GameObject.DontDestroyOnLoad (laser);
 		return laser;
 	}

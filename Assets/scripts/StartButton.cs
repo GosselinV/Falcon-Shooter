@@ -11,11 +11,15 @@ public class StartButton : MonoBehaviour
     }
     public void HandleStartButton()
     {
-        Time.timeScale = 1;
+
         GameObject ship = (GameObject)Instantiate(Resources.Load("prefabs/falcon"));
+        Instantiate(Resources.Load("prefabs/HUD"));
+        Instantiate(Resources.Load("prefabs/healthbar"));
+        HUD.Initialize();
         Destroy(GameObject.FindGameObjectWithTag("controlsButton"));
         Destroy(GameObject.FindGameObjectWithTag("quitButton"));
         Destroy(gameObject);
+        Time.timeScale = 1;
     }
 
 }

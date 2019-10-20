@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1522
     height: 720
-  m_MinSize: {x: 915, y: 422}
-  m_MaxSize: {x: 22010, y: 14044}
+  m_MinSize: {x: 911, y: 422}
+  m_MaxSize: {x: 22006, y: 14022}
   vertical: 0
-  controlID: 1884
+  controlID: 13219
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 658
     height: 720
-  m_MinSize: {x: 436, y: 394}
-  m_MaxSize: {x: 14006, y: 14044}
+  m_MinSize: {x: 432, y: 372}
+  m_MaxSize: {x: 14002, y: 14022}
   vertical: 1
-  controlID: 1795
+  controlID: 13225
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 658
     height: 480
-  m_MinSize: {x: 436, y: 272}
-  m_MaxSize: {x: 14006, y: 10022}
+  m_MinSize: {x: 432, y: 272}
+  m_MaxSize: {x: 14002, y: 10022}
   vertical: 0
-  controlID: 1796
+  controlID: 13130
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 422}
   m_MaxSize: {x: 4004, y: 8022}
   vertical: 1
-  controlID: 1885
+  controlID: 13261
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,7 +394,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
+    m_HSlider: 1
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -408,7 +408,7 @@ MonoBehaviour:
       y: 17
       width: 444
       height: 341
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 1.3354722, y: 1.3354721}
     m_Translation: {x: 222, y: 170.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -416,10 +416,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -222
-      y: -170.5
-      width: 444
-      height: 341
+      x: -166.23334
+      y: -127.670204
+      width: 332.46667
+      height: 255.34041
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -468,19 +468,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/scripts
+    - Assets/Resources/prefabs
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Google Drive\games\Falcon-Shooter
   m_LockTracker:
-    m_IsLocked: 0
+    m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 561b0000
     m_LastClickedID: 6998
-    m_ExpandedIDs: ffffffff00000000ee2f000056300000bc300000d030000010310000f431000072330000cc330000fa3300008c340000b0340000c43400001a3500002235000066360000
+    m_ExpandedIDs: ffffffff00000000082f0000702f0000d62f0000ea2f000094320000ae330000d2330000e633000092350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -505,10 +505,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 288}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000ee2f000056300000bc300000d030000010310000f431000072330000cc330000fa3300008c340000b0340000c43400001a3500002235000066360000
+    m_ExpandedIDs: ffffffff00000000082f0000702f0000d62f0000ea2f000094320000ae330000d2330000e633000092350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6ec4ffffa6c4ffff88c5ffff92c5ffffd0d4ffff4efbffff
+      m_ExpandedIDs: 7875ffffae9cffff22a0ffffe6a5ffffa6afffffe6b1fffff2b1ffff3afbfffff4ffffff3e350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -681,9 +681,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 264.22617, y: 24.302944, z: -232.76338}
+    m_Target: {x: 222, y: 200, z: 0}
     speed: 2
-    m_Value: {x: 264.22617, y: 24.302944, z: -232.76338}
+    m_Value: {x: 222, y: 200, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -716,9 +716,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 504.76892
+    m_Target: 268.60056
     speed: 2
-    m_Value: 504.76892
+    m_Value: 268.60056
   m_Ortho:
     m_Target: 1
     speed: 2

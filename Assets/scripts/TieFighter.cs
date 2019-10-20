@@ -8,16 +8,16 @@ public class TieFighter : Ship {
 	//move support
 	Timer yMoveTimer;
 	float xSpeed = 5f;
-	GameOverEvent gameOverEvent;
+	//GameOverEvent gameOverEvent;
+    DamageEvent damageFalconEvent = new DamageEvent();
 
-
-	// Use this for initialization
-	public void Initialize () {
+    // Use this for initialization
+    public void Initialize () {
 		
 		base.Initialize ();
 
 		// Event system
-		gameOverEvent = new GameOverEvent ();
+		
 		EventManager.AddTieInvoker (this);
 
 		//attack
@@ -40,8 +40,8 @@ public class TieFighter : Ship {
 	/// Adds the game over event listener.
 	/// </summary>
 	/// <param name="listener">Listener.</param>
-	public void AddGameOverEventListener(UnityAction listener){
-		gameOverEvent.AddListener (listener);
+	public void AddDamageFalconEventListener(UnityAction<int> listener){
+		damageFalconEvent.AddListener (listener);
 	}
 
 	/// <summary>
@@ -85,8 +85,8 @@ public class TieFighter : Ship {
 	/// <param name="col">Col.</param>
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "falcon") {
-			Destroy (col.gameObject);
-			gameOverEvent.Invoke ();
+			//Destroy (col.gameObject);
+			damageFalconEvent.Invoke (1);
 		}
 	}
 }

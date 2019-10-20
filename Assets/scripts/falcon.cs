@@ -1,17 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class falcon : Ship {
+public class Falcon : Ship {
 
+    // gameover support
+    GameOverEvent gameOverEvent = new GameOverEvent();
+
+    // health support
+    int health = 10; 
 
 	// movement support
 	const float speed = 10.0f;
 
 	// Use this for initialization
 	void Start () {
+        Debug.Log("Falcon start");
 		base.Initialize ();
-
+        EventManager.AddFalconInvoker(this);
+        EventManager.AddDamageFalconListener(ReduceHealth);
 		laserCD.Duration = 0.1f;
 	}
 
@@ -41,4 +49,21 @@ public class falcon : Ship {
 		}
 	}
 	
+    // health support
+    void ReduceHealth(int damage)
+    {
+        Debug.Log("reduce health: " + damage.ToString());
+        health -= damage;
+        if (health <= 0)
+        {
+            gameOverEvent.Invoke();
+        }
+    }
+
+    // Gameover support
+    public void AddGameOverEventListner(UnityAction listener)
+    {
+        gameOverEvent.AddListener(listener);
+    }
+
 }

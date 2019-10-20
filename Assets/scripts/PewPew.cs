@@ -9,10 +9,10 @@ public class PewPew : MonoBehaviour {
 	void Awake(){
 		ScreenUtils.Initialize ();
 		ObjectPools.Initialize ();
-		LoadScene ();
-		HUD.Initialize ();
+		//LoadScene ();
+		//HUD.Initialize ();
 
-		EventManager.AddListener (HandleEndGame);
+		EventManager.AddGameOverListener (HandleEndGame);
 		tieFighterSpawnTimer = gameObject.AddComponent<Timer> ();
 		tieFighterSpawnTimer.Duration = 1f;
 		tieFighterSpawnTimer.AddTimerFinishedListener (SpawnTieFighter);
@@ -51,7 +51,5 @@ public class PewPew : MonoBehaviour {
 		GameObject.FindGameObjectWithTag ("score").GetComponent<Text> ().text = "score = "+HUD.score.ToString();
 	}
 
-	void LoadScene(){
-		Instantiate (Resources.Load ("prefabs/HUD"));
-	}
+	
 }
