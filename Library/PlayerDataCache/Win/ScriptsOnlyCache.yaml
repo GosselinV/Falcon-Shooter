@@ -3,13 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BackButton
     - ControlsButton
+    - Falcon
+    - Healthbar
     - Laser
     - PewPew
     - QuitButton
     - RestartButton
     - StartButton
     - TieFighter
-    - falcon
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -58,11 +59,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10924}
+      Script: {instanceID: 10926}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11484}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11938}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -139,31 +140,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10526}
+      Script: {instanceID: 10528}
     - Class: 114
-      Script: {instanceID: 10858}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 10924}
+      Script: {instanceID: 10926}
     - Class: 114
-      Script: {instanceID: 10946}
+      Script: {instanceID: 10948}
     - Class: 114
-      Script: {instanceID: 10952}
+      Script: {instanceID: 10954}
     - Class: 114
-      Script: {instanceID: 11028}
+      Script: {instanceID: 11030}
     - Class: 114
-      Script: {instanceID: 11300}
+      Script: {instanceID: 11302}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11484}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 11934}
+      Script: {instanceID: 11734}
     - Class: 114
-      Script: {instanceID: 15680}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 16744}
+      Script: {instanceID: 11962}
+    - Class: 114
+      Script: {instanceID: 15334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -669,6 +672,12 @@ ScriptsOnlyBuild:
     className: RestartButton
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuitButton
+  - hash:
+      serializedVersion: 2
       Hash: 1dcb82730d983b77cec736c6ef19f814
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -702,7 +711,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: falcon
+    className: Falcon
   - hash:
       serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
@@ -783,6 +792,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Healthbar
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -799,12 +814,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: QuitButton
   platform: 5
   scenePathNames:
   - Assets/scenes/scene0.unity
