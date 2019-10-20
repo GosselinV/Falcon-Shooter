@@ -14,6 +14,7 @@ public class StartButton : MonoBehaviour
         Time.timeScale = 1;
         GameObject ship = (GameObject)Instantiate(Resources.Load("prefabs/falcon"));
         Destroy(GameObject.FindGameObjectWithTag("controlsButton"));
+        Destroy(GameObject.FindGameObjectWithTag("quitButton"));
         Destroy(gameObject);
     }
 
